@@ -7,13 +7,21 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class My_Informan extends AppCompatActivity {
+
+    ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_informan);
+
+        iv = findViewById(R.id.iv);
+
+
+
     }
 
     public void clickBtn(View view) {
@@ -34,9 +42,13 @@ public class My_Informan extends AppCompatActivity {
                 if (resultCode != RESULT_CANCELED){
                     Uri uri= data.getData();
 
+                    iv.setImageURI(uri);
+
 
                 }
                 break;
+
+
         }
 
     }
