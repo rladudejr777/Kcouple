@@ -8,10 +8,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class My_Informan extends AppCompatActivity {
 
     ImageView iv;
+    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +21,7 @@ public class My_Informan extends AppCompatActivity {
         setContentView(R.layout.activity_my_informan);
 
         iv = findViewById(R.id.iv);
-
-
+        tv = findViewById(R.id.tv);
 
     }
 
