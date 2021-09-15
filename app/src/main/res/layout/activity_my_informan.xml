@@ -17,10 +17,16 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="#ff333333"
         android:onClick="clickBtn"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="holle"/>
     <ImageView
         android:id="@+id/iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@id/tv"/>
 
 </RelativeLayout>
